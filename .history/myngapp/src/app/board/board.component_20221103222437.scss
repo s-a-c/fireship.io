@@ -1,0 +1,18 @@
+main {
+  display: grid;
+  grid-gap: 0.0rem;
+  grid-template-columns: repeat(3, 250px);
+  place-content: center;
+  // place-items: center;
+  position: relative;
+}
+
+app-square {
+  display: grid;
+  aspect-ratio: 1 / 1;
+  border-radius: 25%;
+  border: 0.08rem gray solid;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+}

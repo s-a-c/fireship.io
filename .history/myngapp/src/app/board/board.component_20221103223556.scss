@@ -1,6 +1,6 @@
 main {
   display: grid;
-  grid-gap: 0.35%;
+  gridgap: 0.35%;
   grid-template-columns: repeat(3, 50px);
   place-content: left;
   // place-items: center;
@@ -17,15 +17,4 @@ app-square {
   text-align: center;
 }
 
-app-square > button {
-  display: grid;
-  aspect-ratio: 1 / 1;
-  border-radius: 15%;
-  border: 0.08rem gray solid;
-  font-size: 100%;
-  font-stretch: ultra-expanded;
-  margin: auto;
-  place-content: center;
-  place-items: center;
-  text-align: center;
-}
+button { width: 100%; height: 100%; font-color: darkviolet; font-size: clamp(1vw, 1rem + 5vw, 15vw) }

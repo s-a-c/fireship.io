@@ -1,0 +1,18 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-gap: 0.0rem;
+  align-items: left;
+  justify-content: center;
+}
+
+app-square {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  border: 0.08rem gray solid;
+  border-radius: 25%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
