@@ -18,7 +18,7 @@ export class BoardComponent implements OnInit {
 
   newGame () {
     this.squares = Array( 9 ).fill( null )
-    this.winner = ""
+    this.winner = null
     this.xIsNext = true
   }
 
@@ -56,6 +56,6 @@ export class BoardComponent implements OnInit {
         return this.squares[ a ]
       }
     }
-    return ""
+    return null
   }
 }

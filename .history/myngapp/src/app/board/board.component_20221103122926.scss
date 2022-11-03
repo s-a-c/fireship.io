@@ -1,0 +1,13 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-gap: 0.1rem;
+}
+
+app-square {
+  border: 0.05rem yellow solid;
+  aspect-ratio: 1 / 1;
+  background-color: lightseagreen;
+  color: black;
+  outline: 0.1rem blue solid;
+}

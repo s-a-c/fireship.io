@@ -6,23 +6,27 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: [ './board.component.scss' ]
 } )
 export class BoardComponent implements OnInit {
-  squares: string[]
-  xIsNext: boolean
-  winner: string
+
+  squares: string[] = Array( 9 ).fill( null )
+  xIsNext: boolean = true
+  winner: string = ""
+
 
   constructor () { }
 
   ngOnInit () {
     this.newGame()
+
   }
 
   newGame () {
     this.squares = Array( 9 ).fill( null )
-    this.winner = ""
     this.xIsNext = true
+    this.winner = ""
+
   }
 
-  get player () {
+  get player (): string {
     return this.xIsNext ? 'X' : 'O'
   }
 
@@ -31,8 +35,6 @@ export class BoardComponent implements OnInit {
       this.squares.splice( idx, 1, this.player )
       this.xIsNext = !this.xIsNext
     }
-
-    this.winner = this.calculateWinner();
   }
 
   calculateWinner () {
@@ -56,6 +58,7 @@ export class BoardComponent implements OnInit {
         return this.squares[ a ]
       }
     }
-    return ""
+    return null
   }
+
 }

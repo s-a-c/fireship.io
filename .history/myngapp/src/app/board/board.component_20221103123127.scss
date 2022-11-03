@@ -5,6 +5,10 @@ main {
 }
 
 app-square {
+  border: 0.1rem yellow solid;
   aspect-ratio: 1 / 1;
-  border: 0.08rem gray solid;
+  background-color: lightseagreen;
+  color: black;
+  outline: 0.1rem blue solid;
+  z-index: 0;
 }
